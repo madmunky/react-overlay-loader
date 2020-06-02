@@ -21,7 +21,7 @@ const styles = {
 
 const Loader = ({
   loading,
-  text = "Loading..",
+  text = this.props.loadingText !== undefined ?  this.props.loadingText : "Loading..",
   fullPage,
   containerStyle,
   textStyle
